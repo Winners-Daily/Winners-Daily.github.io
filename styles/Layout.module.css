@@ -1,0 +1,21 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  font-family: 'Montserrat';
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.25rem;
+  background-color: #FAFAFA;
+  
+}

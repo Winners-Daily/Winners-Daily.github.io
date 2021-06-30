@@ -1,0 +1,64 @@
+.nav {
+  height: 50px;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav ul li a {
+  margin: 5px 15px;
+}
+
+.logo {
+  height: 1.2em;
+  padding-top: 3px;
+  padding-right: 15px;
+  padding-left: 45%;
+}
+
+.Ham {
+    size: 5em;
+    position: inherit !important;
+}
+
+.Hamnav {
+  height: 50px;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height:100%;
+}
+
+.Hamnav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-direction: column;
+  padding-left: 0%;
+  
+}
+
+.Hamnav ul li {
+  margin: 5px 15px;
+  padding-bottom: 7px;
+}
+
+.MainDev{
+    display: block;
+    align-items: center;
+
+}

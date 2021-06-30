@@ -1,0 +1,155 @@
+.main{
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+    
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.sec{
+  width: 100%;
+  margin-left: 0;
+  left:0;
+
+  height: fit-content;
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.p{
+   font-size: medium;
+   min-width: 340px;
+   width: 25%;
+
+}
+
+.cardHolders{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 500px;
+}
+
+@media (min-width: 801px) {
+  .sideCard{
+    min-width: 180px;
+    min-height: 270px;
+    width: calc(180px + 1%);
+    border-radius: 25px;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .centerCard{
+    min-width: 270px;
+    min-height: 380px;
+    width: calc(270px + 1%);
+    /*width: 250px;
+    height: 370px;*/
+    border-radius: 25px;
+    background-color: white;
+    z-index: 2;
+  }
+}
+
+
+@media (max-width: 801px) {
+  .sideCard{
+    min-width: 100px;
+    min-height: 200px;
+    border-radius: 25px;
+    background-color: black;
+    z-index: 1;
+  }
+
+  .centerCard{
+    min-width: 180px;
+    min-height: 270px;
+    /*width: 250px;
+    height: 370px;*/
+    border-radius: 25px;
+    background-color: red;
+    z-index: 2;
+  }
+}
+
+.btn{
+  min-width: 200px;
+  min-height: 40px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 60px 0px;
+  font-size: small;
+  background-color:  #E8E8E8;
+  border: none;
+  cursor: pointer;
+  
+}
+
+
+.btn:hover { 
+  background-color:  #c5c3c3;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 50px ;
+  align-items:baseline;
+  justify-content: baseline;
+  
+
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0px 50px ;
+  font-size: medium;
+  
+}
+
+.box {
+  height: 110px;
+  width: 110px;
+  border-radius: 25px;
+
+  animation: fade-in 1300ms linear 0s normal 1 both;
+  
+  
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.wrapper{
+    --chiclet-size: 110px;
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+    grid-template-rows: repeat(3, var(--chiclet-size));
+    grid-template-columns: repeat(19, var(--chiclet-size));
+    justify-content: center;
+    margin-bottom: -180px;
+}
