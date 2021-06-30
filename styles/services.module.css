@@ -1,9 +1,8 @@
 .main{
   box-sizing: border-box;
   overflow-x: hidden;
-  overflow-y: hidden;
   width: 100%;
-    
+  background-color: #FAFAFA;
   display: flex;
   align-items: center;
   flex-direction: column;
