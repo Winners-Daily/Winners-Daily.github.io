@@ -64,12 +64,7 @@
 }
 
 
-.content{
-    margin-top: 60px;
-    margin-left: 50%;
-    margin-right: 50%;
-    width: max-content;
-}
+
 
 .p1{
   width: 370px;
@@ -87,22 +82,9 @@
   text-align: left;
 }
 
-.textBox{
-  width: 420px;
-  height: 240px;
-  border-radius: 25px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  background-color: gainsboro;  
-}
 
-.postImg{
-  width: inherit;
-  height: inherit;
-  border-radius: 25px;
-  
-}
+
+
 
 @media (min-width: 801px) {
   .row{
@@ -111,6 +93,29 @@
     align-items: center;
     
   }
+  .textBox{
+    width: 420px;
+    height: 240px;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;  
+  }
+
+  .postImg{
+    width: inherit;
+    height: inherit;
+    border-radius: 25px;
+    
+  }
+
+  .content{
+    margin-top: 60px;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: max-content;
+  }
 }
 
 @media (max-width: 801px) {
@@ -118,6 +123,43 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
     
   }
+  .textBox{
+    width: inherit;
+    height: 90%;
+    min-height: 230px;
+    min-width: 300px;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;  
+  }
+  .postImg{
+    width: 100%;
+    height: inherit;
+    border-radius: 25px;
+    
+  }
+  .p2{
+    font-size: large;
+  }
+  .content{
+    margin-top: 60px;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 50%;
+  }
+
+  .p1{
+    width: auto;
+  }
+  .h2{
+    width: auto;
+    font-size: larger;
+    text-align: center;
+  }
 }
+

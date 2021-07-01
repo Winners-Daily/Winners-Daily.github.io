@@ -74,8 +74,8 @@ const services = () => {
             </div>
 
             
-            <div className={serviceStyles.sec} style={{ width: '100%' }}>
-                <h1 style={{ width: 440 }}>Something awesome
+            <div className={serviceStyles.sec}>
+                <h1 className={serviceStyles.h1} >Something awesome
                     is in the work.</h1>
                 <p className={serviceStyles.p} style={{ marginBottom: 40 }}>
                     Be the first to get notified when the app is launched.

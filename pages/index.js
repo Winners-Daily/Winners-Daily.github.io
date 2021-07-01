@@ -53,7 +53,7 @@ export default function Home() {
       <img className={homeStyles.box, homeStyles.logo} style={{ animationDelay: 800  + "ms" }} src="/home/logo.png" />
 
       <div className={homeStyles.content}>
-        <h2>A map to discover treasures.</h2>
+        <h2 className={homeStyles.h2} >A map to discover treasures.</h2>
         <p className={homeStyles.p1} >
           Our goal is to deliver architectural competition data in a visually 
           engaging manner. Whether you are an architect or designer, renderer,

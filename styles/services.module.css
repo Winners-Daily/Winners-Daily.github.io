@@ -11,63 +11,206 @@
 
 }
 
-.sec{
-  width: 100%;
-  margin-left: 0;
-  left:0;
 
-  height: fit-content;
-  
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
 
-}
-
-.p{
-   font-size: medium;
-   min-width: 340px;
-   width: 25%;
-
-}
-
-.textBox{
-  width: 420px;
-  height: 240px;
-  border-radius: 25px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  background-color: gainsboro;  
-}
-
-.textBoxSpecial{
-  width: 420px;
-  height: 480px;
-  border-radius: 25px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  background-color: gainsboro;  
-}
 
 @media (min-width: 801px) {
+  .sec{
+    width: 100%;
+    margin-left: 0;
+    left:0;
+
+    height: fit-content;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .p{
+    font-size: medium;
+    min-width: 340px;
+    width: 25%;
+
+  }
+
   .row{
     display: flex;
     flex-direction: row;
     align-items: center;
     
   }
+
+  .textBox{
+    width: 420px;
+    height: 240px;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;  
+  }
+
+  .textBoxSpecial{
+    width: 420px;
+    height: 480px;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;  
+  }
+  .postImg{
+    width: inherit;
+    height: inherit;
+    border-radius: 25px;
+    
+  }
+  .p2{
+    margin: 30px;
+    font-size: x-large;
+    font-weight: bold;
+    width: 240px;
+    text-align: left;
+  }
+    
+  .inputBox{
+    min-width: 200px;
+    min-height: 40px;
+    border-radius: 10px;
+    margin: 0px;
+    font-size: small;
+    background-color:  #E8E8E8;
+    border: none;
+  }
+
+  .input {
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+  }
+
+  .lable{
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .inputRow{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .h1{
+    width: 440px;
+  }
 }
 
 @media (max-width: 801px) {
+  .sec{
+    width: 80%;
+    margin-left: 0;
+    left:0;
+
+    height: fit-content;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .p{
+    font-size: medium;
+    width: 90%;
+
+  }
+
   .row{
     display: flex;
     flex-direction: column;
     align-items: center;
     
+    width: 90%;
   }
+  .textBox{
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;  
+  }
+
+  .textBoxSpecial{
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;  
+  }
+  .postImg{
+    width: 100%;
+    height: inherit;
+    border-radius: 25px;
+    
+  }
+  .p2{
+    margin: 30px;
+    font-size: larger;
+    font-weight: bold;
+    width: 240px;
+    text-align: left;
+  }
+  
+  .inputBox{
+    min-width: 70%;
+    min-height: 40px;
+    border-radius: 10px;
+    margin: 0px;
+    font-size: small;
+    background-color:  #E8E8E8;
+    border: none;
+  }
+
+  .input {
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+  }
+
+  .lable{
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .inputRow{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .h1{
+    width: 90%;
+  }
+
 }
 
 .col{
@@ -75,21 +218,6 @@
   flex-direction: column;
   align-items: center;
   
-}
-
-.postImg{
-  width: inherit;
-  height: inherit;
-  border-radius: 25px;
-  
-}
-
-.p2{
-  margin: 30px;
-  font-size: x-large;
-  font-weight: bold;
-  width: 240px;
-  text-align: left;
 }
 
 .btn{
@@ -108,37 +236,4 @@
 
 .btn:hover { 
   background-color:  #c5c3c3;
-}
-
-.inputBox{
-  min-width: 200px;
-  min-height: 40px;
-  border-radius: 10px;
-  margin: 0px;
-  font-size: small;
-  background-color:  #E8E8E8;
-  border: none;
-}
-
-.input {
-  align-items: center;
-  justify-content: center;
-  max-width: 50%;
-}
-
-.lable{
-  align-items: center;
-  justify-content: center;
-  width: 160px;
-  text-align: right;
-  margin-right: 20px;
-}
-
-.inputRow{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
 }
