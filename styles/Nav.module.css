@@ -30,6 +30,12 @@
   cursor: pointer; 
 }
 
+.logoCenter {
+  height: 6em;
+  padding-top: 3px;
+  cursor: pointer; 
+}
+
 .insta {
   position: absolute;
   top: 0;

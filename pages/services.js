@@ -24,7 +24,7 @@ const services = () => {
 
             <div className={serviceStyles.row}>
                 <div className={serviceStyles.textBoxSpecial} style={{ backgroundColor: 'white'}}>
-                    <img className={serviceStyles.postImg} src="/services/post.png" />
+                    <img className={serviceStyles.postImg} src="/services/post3.png" />
                 </div>
                 <div className={serviceStyles.col}>
 
@@ -73,7 +73,7 @@ const services = () => {
                 </div>
             </div>
 
-            {/*
+            
             <div className={serviceStyles.sec} style={{ width: '100%' }}>
                 <h1 style={{ width: 440 }}>Something awesome
                     is in the work.</h1>
@@ -89,20 +89,19 @@ const services = () => {
                         <div className={serviceStyles.inputRow}>
 
                             <label className={serviceStyles.lable} for="mce-FNAME">First Name  </label>
-                            <input type="text" placeholder="Name" name="FNAME" id="mce-FNAME" className={serviceStyles.inputBox} />
+                            <input type="text" placeholder="  Name" name="FNAME" id="mce-FNAME" className={serviceStyles.inputBox} />
                         </div>
                         
                         <div className={serviceStyles.inputRow}>
                             <label className={serviceStyles.lable} for="mce-EMAIL" >Email Address </label>
-                            <input type="email" placeholder="Email" name="EMAIL" id="mce-EMAIL" className={serviceStyles.inputBox} required  />
+                            <input type="email" placeholder="  Email" name="EMAIL" id="mce-EMAIL" className={serviceStyles.inputBox} required  />
                         </div>
 
                     </div>
                         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className={serviceStyles.btn}/>
                 </form>
             </div>
-            */
-            }
+            
 
         </div>
     );

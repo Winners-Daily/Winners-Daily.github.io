@@ -19,13 +19,27 @@
   margin: 5px 15px;
 }
 
-.logo {
-  height: 1.2em;
-  padding-top: 3px;
-  padding-right: 15px;
-  padding-left: 45%;
+@media (max-width: 801px) {
+  .logo {
+    padding-right: 15px;
+    padding-left: 45%;
+
+    height: 6em;
+    padding-top: 3px;
+    cursor: pointer; 
+  }
 }
 
+@media (max-width: 500px) {
+    .logo {
+    padding-right: 15px;
+    padding-left: 35%;
+
+    height: 6em;
+    padding-top: 3px;
+    cursor: pointer; 
+  }
+}
 .Ham {
     size: 5em;
     position: inherit !important;

@@ -15,7 +15,7 @@ const FullMenu = () => {
                     <Link href='/community'>Community</Link>
                 </li>
                 <li className={router.pathname == "/" ? navStyles.active : navStyles.notActive}>
-                    <Link href='/'><img src="/WD.png" alt="Vercel" className={navStyles.logo} /></Link>
+                    <Link href='/'><img src="/WD.png" alt="Vercel" className={navStyles.logoCenter} /></Link>
                 </li>
                 <li className={router.pathname == "/mediaKit" ? navStyles.active : navStyles.notActive}>
                     <Link href='/mediaKit'>Media Kit</Link>

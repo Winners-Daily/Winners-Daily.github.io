@@ -62,7 +62,8 @@
 
 .p2{
   margin: 30px;
-  width: 290px;
+  width: 50%;
+
   text-align: left;
 }
 
@@ -71,6 +72,8 @@
   flex-direction: column;
   margin: 0px 50px ;
   align-items: center;
+  min-width: none;
+  width: 40%;
 }
 
 .tableRow{
@@ -97,8 +100,13 @@
 
 .p3{
    font-size: medium;
-   min-width: 340px;
-   width: 25%;
+   width: 30%;
+
+}
+
+.p4{
+   font-size: medium;
+   width: 100%;
 
 }
 
@@ -117,20 +125,93 @@
 
 }
 
-.line{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
+
+.imgKit{
+  max-width: 20%;
 }
 
-.wrapper{
-  display: flex;
-  align-items: flex-start;
-  width: min-content;
-  min-width: 440px;
-  flex-direction: column;
-  text-align: center;
+@media (max-width: 801px) {
+  .line{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+  }
+  .p3{
+    width: fit-content;
+    margin: 0 40px 20px 40px;
+  }
+
+  
+  .p3S{
+    font-size: small;
+    text-align: center;
+    width: fit-content;
+    margin: 0 40px 20px 40px;
+  }
+
+  .wrapper{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .wrapper2{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+  }
+  .imgSmall{
+    width: 10%;
+    max-width: 50px;
+    height: auto;
+  }
+}
+@media (min-width: 801px) {
+  .line{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .wrapper{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    margin-left: 75%;
+    flex-direction: column;
+    text-align: center;
+  }  
+  
+  .wrapper2{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    margin-left: 60%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .p3S{
+    font-size: medium;
+    text-align: left;
+    min-width: 307px;
+    width: 30%;
+    max-width: 30%;
+  }
+
+  .imgSmall{
+    width: 10%;
+    max-width: 50px;
+    height: auto;
+    margin-right: 30px;
+  }
 }
 
 

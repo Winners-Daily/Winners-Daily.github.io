@@ -9,8 +9,8 @@ const about = () => {
       <Meta title='About' />
 
       <div className={aboutStyles.content}>
-        <h1>Have a seat !</h1>
-        <h4>let us tell you our story</h4>
+        <h1 style={{marginBottom: 0}}>Have a seat !</h1>
+        <h4>Let us tell you our story</h4>
         <p className={aboutStyles.p3} >
           Starting off in the summer of 2020, as a group of architects based in Barcelona 
           who are connected through pastimes like art-photography and vibrating jazz evenings. 
@@ -20,22 +20,24 @@ const about = () => {
         </p>
         <img src="/about/topImage.png" />
 
-        <div className={aboutStyles.content}>
-          
-          <h2>What exactly is WinnersDaily?</h2>
-          <p className={aboutStyles.p3} style={{ fontSize:'medium'}}>
-            WinnersDaily is an online data base of information related to architectural competitions. 
-            We provide a frame and canvas for every project to display its beauty on the screens of 
-            thousands of new viewers. We value the work of architects and renderers who break the 
-            wall between reality and idea in order to show a hint of the future. WinnersDaily is 
-            a virtual currency for architectural competitions, a platform where acknowledged 
-            winners from all over the world come together to form a community, a showcase to 
-            gasp side by side with those whose work is subtly recognized. Without any doubt, 
-            we provide to those who thirst for inspiration to win and become a new reference 
-            in the field. So welcome! We encourage the diffusion of your hard work.
+        <div className={aboutStyles.sec2}>
+          <div className={aboutStyles.content}>
+            
+            <h2>What exactly is WinnersDaily?</h2>
+            <p className={aboutStyles.p3} style={{ fontSize:'medium'}}>
+              WinnersDaily is an online data base of information related to architectural competitions. 
+              We provide a frame and canvas for every project to display its beauty on the screens of 
+              thousands of new viewers. We value the work of architects and renderers who break the 
+              wall between reality and idea in order to show a hint of the future. WinnersDaily is 
+              a virtual currency for architectural competitions, a platform where acknowledged 
+              winners from all over the world come together to form a community, a showcase to 
+              gasp side by side with those whose work is subtly recognized. Without any doubt, 
+              we provide to those who thirst for inspiration to win and become a new reference 
+              in the field. So welcome! We encourage the diffusion of your hard work.
 
-          </p>
-          
+            </p>
+            
+          </div>
         </div>
       </div>
 
@@ -69,13 +71,24 @@ const about = () => {
       </div>
 
 
-      <div className={aboutStyles.sec3}>
+      <div className={aboutStyles.sec2}>
         <h2>Media Press Kit</h2>
         <p className={aboutStyles.p3} >
           Download our logo or icon and use it on your website or advertising.
 
         </p>
-        <img src="/about/mediaKit.png" style={{ width: '50%', height: 'auto' , margin: 30}} />
+        <div className={aboutStyles.wrapper2} >
+            <div className={aboutStyles.line}>
+              <img src="/about/mediaKit1.png" className={aboutStyles.imgKit} />
+            <img src="/about/mediaKit2.png" className={aboutStyles.imgKit} />
+            </div>
+
+            <div className={aboutStyles.line}>
+            <img src="/about/mediaKit3.png" className={aboutStyles.imgKit}/>
+            <img src="/about/mediaKit4.png" className={aboutStyles.imgKit}/>
+              
+            </div>
+          </div>
           <button className={aboutStyles.btn}>
             <a href="/WinnersDaily_Press_Kit_All.zip" download="winnersdaily_media_kit" className={aboutStyles.p3} style={{margin: 20}}>
               Download all logos & icons
@@ -84,34 +97,36 @@ const about = () => {
         <br />
       </div>
       
-      <div className={aboutStyles.sec2}>
+      <div className={aboutStyles.sec3}>
         <h2>Get closer</h2>
         <div className={aboutStyles.wrapper}>
+
           <div className={aboutStyles.line}>
-          <img src="/about/pen.png" style={{ width: '10%', maxWidth: 50, height: 'auto', marginRight: 30 }} />
-          <p className={aboutStyles.p3} >
-              We’re continuously looking for talent. If you want to become a contributor to our blog, please write to us at <b>contact@thewinnersdaily.com</b>
-          </p>
+            <img src="/about/pen.png" className={aboutStyles.imgSmall} />
+            <p className={aboutStyles.p3S} >
+                We’re continuously looking for talent. If you want to become a contributor to our blog, please write to us at <b>contact@thewinnersdaily.com</b>
+            </p>
           </div>
 
           <div className={aboutStyles.line}>
-            <img src="/about/question.png" style={{ width: '10%', maxWidth: 50, height: 'auto', marginRight: 30 }} />
-            <p className={aboutStyles.p3} >
+            <img src="/about/question.png" className={aboutStyles.imgSmall} />
+            <p className={aboutStyles.p3S} >
               Should you have any questions, proposals, or require any further assistance regarding WINNERSDAILY, please do not hesitate to contact us at <b>contact@thewinnersdaily.com</b>
             </p>
           </div>
 
           <div className={aboutStyles.line}>
-            <img src="/about/textBox.png" style={{ width: '10%', maxWidth: 50, height: 'auto', marginRight: 30 }} />
-            <p className={aboutStyles.p3} >
+            <img src="/about/textBox.png" className={aboutStyles.imgSmall} />
+            <p className={aboutStyles.p3S} >
               We are open to partnerships and other collaborations. We would love to hear from you at <b>contact@thewinnersdaily.com</b>
             </p>
           </div>
+
         </div>
         <br />
       </div>
 
-      <div className={aboutStyles.sec3}>
+      <div className={aboutStyles.sec2}>
         <h2>The whole web is made by us</h2>
         <p className={aboutStyles.p3} >
           We are proud of the diverse backgrounds our team comes from, having international members within different specialties, from architects and engineers to business analysts. It’s our believe that diversity is a key factor for creativity in our workspace.
