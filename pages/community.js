@@ -1,5 +1,6 @@
 import communityStyles from '../styles/community.module.css'
 import Link from 'next/link'
+import Meta from '../components/Meta'
 
 const community = () => {
 
@@ -19,7 +20,7 @@ const community = () => {
 
     return (
         <div className={communityStyles.main}>
-
+            <Meta title='Community' />
 
             <div className={communityStyles.sec}>
                 
@@ -180,7 +181,7 @@ const community = () => {
                 </div>
                 <div className={communityStyles.sec} style={{width: '100%'}}>
                     <h1 style={{marginBottom: 90}}>WinnersDaily and you.<br/>
-                        Together every step of the way.</h1>
+                                    Together every step of the way.</h1><Meta title='Community' />
                     <div className={communityStyles.wrapper}>
                         {
                             arr.map(_ => {

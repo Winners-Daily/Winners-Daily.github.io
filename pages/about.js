@@ -1,8 +1,16 @@
 import Meta from '../components/Meta'
 import aboutStyles from '../styles/about.module.css'
+import Count from '../components/Counter'
+import { InView } from 'react-intersection-observer';
 
 
 const about = () => {
+
+  function resetCounter(entry){
+    
+      return <Count key={1} number={'2020'} duration={5} />
+    
+  }
 
   return (
     <div className={aboutStyles.main}>
@@ -50,21 +58,53 @@ const about = () => {
           <div className={aboutStyles.tableRow}>
             <div className={aboutStyles.tableCol} style={{ width: 80 }}>
               <p style={{ marginBottom: 2 }}>Constitution</p>
-              <h2 className={aboutStyles.counter} style={{margin: 0}}></h2>
+              <InView>
+                {({ inView, ref, entry }) => (
+                  <div ref={ref}>
+                      {inView && <Count key={1} number={'2020'} duration={2.5} />}
+                    </div>
+                  )
+                }
+              </InView>
+              
             </div>
             <div className={aboutStyles.tableCol} style={{ width: 80 }}>
               <p style={{ marginBottom: 2 }}>Offices</p>
-              <h2 className={aboutStyles.counter2}  style={{ margin: 0 }}></h2>
+              <InView>
+                {({ inView, ref, entry }) => (
+                  <div ref={ref}>
+                    {inView && <Count key={1} number={'342'} duration={1.5} />}
+                  </div>
+                )
+                }
+              </InView>
+              
             </div>
           </div>  
           <div className={aboutStyles.tableRow}>
             <div className={aboutStyles.tableCol} style={{ width: 80 }}>
               <p style={{ marginBottom: 2 }}>Projects</p>
-              <h2 className={aboutStyles.counter3} style={{ margin: 0 }}></h2>
+              <InView>
+                {({ inView, ref, entry }) => (
+                  <div ref={ref}>
+                    {inView && <Count key={1} number={'439'} duration={2} />}
+                  </div>
+                )
+                }
+              </InView>
+              
             </div>
             <div className={aboutStyles.tableCol} style={{ width: 80 }}>
               <p style={{ marginBottom: 2 }}>Countries</p>
-              <h2 className={aboutStyles.counter4} style={{ margin: 0 }}></h2>
+              <InView>
+                {({ inView, ref, entry }) => (
+                  <div ref={ref}>
+                    {inView && <Count key={1} number={'65'} duration={1} />}
+                  </div>
+                )
+                }
+              </InView>
+              
             </div>
           </div>
         </div>

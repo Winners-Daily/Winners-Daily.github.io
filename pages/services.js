@@ -1,8 +1,10 @@
 import serviceStyles from '../styles/services.module.css'
+import Meta from '../components/Meta'
 
 const services = () => {
     return (
         <div className={serviceStyles.main}>
+            <Meta title='Services' />
             <div className={serviceStyles.sec}>
                 <h1>Services</h1>
             </div>

@@ -245,12 +245,14 @@
   initial-value: 342;
   inherits: false;
 }
+
+
 .counter2 {
   animation: counter2 3s ease-in-out;
   counter-reset: num2 var(--num2);
   font: 800 40px system-ui;
-  
 }
+
 .counter2::after {
   content: counter(num2);
 }
