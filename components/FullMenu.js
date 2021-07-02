@@ -24,7 +24,11 @@ const FullMenu = () => {
                     <Link href='/services'>Services</Link>
                 </li>
                 <li>
-                    <div className={navStyles.insta}><Link href='https://www.instagram.com/winnersdaily/'><img src="/instagram.png" alt="Vercel" className={navStyles.logo} /></Link></div>
+                    <div className={navStyles.insta}>
+                        <a href='https://www.instagram.com/winnersdaily/' target="_blank" rel="noopener noreferrer">
+                            <img src="/instagram.png" alt="Vercel" className={navStyles.logo} />
+                        </a>
+                    </div>
                 </li>
             </ul>
         </nav>
