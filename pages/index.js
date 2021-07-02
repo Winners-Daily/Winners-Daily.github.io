@@ -32,7 +32,7 @@ export default function Home() {
     i += 2;
     name = "/grid/test/pic" + (id + 1) + ".jpg";
     imgs.push(
-      <div className={homeStyles.box} style={{ gridColumn: i, gridRow: j, marginTop: first, animationDelay: 100 * j + i * 10 + "ms" }}>
+      <div className={homeStyles.box} style={{ gridColumn: i, gridRow: j, marginTop: first, animationDelay: 1000 + 100 * j + i * 10 + "ms" }}>
         <img id={id++} className="image" src={name} height={110} width={110} />
         <style jsx>{`
         .image {
