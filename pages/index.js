@@ -2,7 +2,7 @@ import homeStyles from '../styles/home.module.css';
 import ImageFadeIn from "react-image-fade-in";
 import { Center } from '@chakra-ui/react';
 import Link from 'next/link';
-
+import Image from 'next';
 
 export default function Home() {
   const arr = [...Array(25)];
@@ -30,9 +30,16 @@ export default function Home() {
       odd = !odd;
     }
     i += 2;
-    name = "/grid/pic" + (id + 1) + ".png";
+    name = "/grid/test/pic" + (id + 1) + ".jpg";
     imgs.push(
-      <img id={id++} className={homeStyles.box} style={{ gridColumn: i, gridRow: j, marginTop: first, animationDelay: 100 * j + i * 10 + "ms" }} src={name} />
+      <div className={homeStyles.box} style={{ gridColumn: i, gridRow: j, marginTop: first, animationDelay: 100 * j + i * 10 + "ms" }}>
+        <img id={id++} className="image" src={name} height={110} width={110} />
+        <style jsx>{`
+        .image {
+          border-radius: 25px;
+        }
+      `}</style>
+      </div>
     )
   }
   )
