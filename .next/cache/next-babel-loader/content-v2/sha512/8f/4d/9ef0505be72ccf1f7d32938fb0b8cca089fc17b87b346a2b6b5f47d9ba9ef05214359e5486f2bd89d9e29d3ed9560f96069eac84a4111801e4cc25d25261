@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\n\nconst mediaKit = () => {\n  return /*#__PURE__*/_jsx(\"div\", {\n    children: /*#__PURE__*/_jsx(\"img\", {\n      src: \"/mediaKit/mediaKit.png\",\n      style: {\n        width: '100%'\n      }\n    })\n  });\n};\n\nexport default mediaKit;","map":null,"metadata":{},"sourceType":"module"}
