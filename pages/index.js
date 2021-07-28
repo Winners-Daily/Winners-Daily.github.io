@@ -18,7 +18,13 @@ const Home = () => {
     arr.map(_ => {
         if (i > width) {
             first -= 63;
-            (odd) ? i = i_offset : i = i_offset + 1, i_offset += 2, width -= 1;
+            if (odd) 
+                i = i_offset 
+            else {
+                i = i_offset + 1;
+                i_offset += 2;
+                width -= 1;
+            }
             j++;
             odd = !odd;
         }
