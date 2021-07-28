@@ -1,5 +1,4 @@
-
-import Meta from '../components/Meta'
+import Meta from '../components/Meta';
 
 const mediaKit = () => {
     return(
@@ -8,7 +7,6 @@ const mediaKit = () => {
             <img src="/mediaKit/mediaKit.png" style={{width : '100%'}}/>
         </div>
     );
-
 }
 
 export default mediaKit;

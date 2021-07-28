@@ -1,66 +1,47 @@
-import communityStyles from '../styles/community.module.css'
-import Link from 'next/link'
-import Meta from '../components/Meta'
+import communityStyles from '../styles/community.module.css';
+import Link from 'next/link';
+import Meta from '../components/Meta';
 
 const community = () => {
-
     const arr = [...Array(23)];
-    var i = 1;
-    var j = 1;
-    var i_offset = 1;
-    var odd = false;
-    var id = 0;
-    var first = -10;
-    var width = 15;
-    var name = "";
-
-    function btn(){
-        console.log('hello');
-    }
+    let i = 1;
+    let j = 1;
+    let i_offset = 1;
+    let odd = false;
+    let id = 0;
+    let first = -10;
+    let width = 15;
+    let name = "";
 
     return (
         <div className={communityStyles.main}>
             <Meta title='Community' />
-
             <div className={communityStyles.sec}>
-                
-                <h1>Winning is
-                    no secret anymore.</h1>
+                <h1>Winning is no secret anymore.</h1>
                 <p className={communityStyles.p}>
                     WinnersDaily is committed to support architects turn their brightest works into trending posts, that’s why we assist you to distribute your content and grow your image. Our platform is trustworthy, accessible and connects you to thousands of feeds around the globe.
-                    <br/>
-                    <br/>
+                    <br/><br/>
                     WinnersDaily and You. Together every step of the way.
-
                 </p>
             </div>
-
-
             <div className={communityStyles.sec}>
                 <h1>Winner winner, chicken dinner!</h1>
                 <p className={communityStyles.p}>
                     Competition is exciting and fun! That’s why we give a special reward to every week, month and yearly most recognized winner. A way of encouraging the flow of hard work and our way of gratifying how important you guys are to us.
                 </p>
-
                 <div className={communityStyles.cardHolders}>
                     <img className={communityStyles.sideCard} style={{ marginRight: '-3%' }} src="/community/instagram_3er premio.jpg"/>
                     <img className={communityStyles.centerCard} src="/community/instagram_1er premio.jpg"/>
                     <img className={communityStyles.sideCard} style={{ marginLeft: '-3%' }} src="/community/instagram_2nd premio.jpg"/>
                 </div>
             </div>
-            
             <div className={communityStyles.sec}>
                 <h1>Want to get ranked? Submit your work</h1>
-                <p className={communityStyles.p}>
-                    We know you want a pizza too.<br/>
-                    We all do, hurry up before it gets cold!
-
-                </p>
-
-                <Link href='https://wdailycontact.typeform.com/to/ldHTBair'><input type='submit' value="Get Ranked" className={communityStyles.btn} /></Link>
-
+                <p className={communityStyles.p}>We know you want a pizza too.<br/>We all do, hurry up before it gets cold!</p>
+                <Link href='https://wdailycontact.typeform.com/to/ldHTBair'>
+                    <input type='submit' value="Get Ranked" className={communityStyles.btn} />
+                </Link>
             </div>
-
             <div className={communityStyles.sec}>
                 <h1>Featuring</h1>
                 <div className={communityStyles.row}>
@@ -156,7 +137,6 @@ const community = () => {
                             <p style={{ margin: 0 }}>-LymVisual</p>
                             <p style={{ margin: 0 }}>-MOT</p>
                         </div>
-                        
                         <div className={communityStyles.col}>
                             <p style={{ margin: 0 }}>-Mammutlab</p>
                             <p style={{ margin: 0 }}>-Mir.</p>
@@ -176,47 +156,30 @@ const community = () => {
                             <p style={{ margin: 0 }}>-WOLF Visualizing</p>
                         </div>
                     </div>
-                    
                     <Link href='https://wdailycontact.typeform.com/to/ldHTBair'><input type='submit' value="Get Featured" className={communityStyles.btn} /></Link>
                 </div>
                 <div className={communityStyles.sec} style={{width: '100%'}}>
-                    <h1 style={{marginBottom: 90}}>WinnersDaily and you.<br/>
-                                    Together every step of the way.</h1><Meta title='Community' />
+                    <h1 style={{marginBottom: 90}}>WinnersDaily and you.<br/>Together every step of the way.</h1>
+                    <Meta title='Community' />
                     <div className={communityStyles.wrapper}>
-                        {
-                            arr.map(_ => {
-                                if (i > width) {
-                                    if (first > -240)
-                                        first -= 60;
-                                    else 
-                                        first -= 30;
-                                    if (odd) {
-                                        i = i_offset;
-                                    }
-                                    else {
-                                        i = i_offset + 1;
-                                        //i_offset += 2;
-                                        //width -= 1;
-                                    }
-                                    j++;
-                                    odd = !odd;
-                                }
-                                i += 2;
-                                name = "/grid/pic" + (id + 1) + ".png";
-                                return (
-                                    <img id={id++} className={communityStyles.box} style={{ gridColumn: i, gridRow: j, marginTop: first, animationDelay: 100 * j + i * 10 + "ms" }} src={name} />
-                                )
+                        {arr.map(_ => {
+                            if (i > width) {
+                                (first > -240) ? first -= 60 : first -= 30;
+                                (odd) ? i = i_offset : i = i_offset + 1;
+                                j++;
+                                odd = !odd;
                             }
+                            i += 2;
+                            name = "/grid/pic" + (id + 1) + ".png";
+                            return (
+                                <img id={id++} className={communityStyles.box} style={{ gridColumn: i, gridRow: j, marginTop: first, animationDelay: 100 * j + i * 10 + "ms" }} src={name} />
                             )
-                        }
+                        })}
                     </div>
                 </div>
             </div>
-            
-            
         </div>
     );
-
 }
 
 export default community;

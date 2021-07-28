@@ -4,37 +4,31 @@ import { InView } from 'react-intersection-observer';
 //styling
 import '../styles/counter.module.css';
 
-
 const Count = props => {
-    // label of counter
-    // number to increment to
-    // duration of count in seconds
-    const label = props.lable
-    const number = props.number
-    const duration  = props.duration
+    const label = props.lable;          // label of counter
+    const number = props.number;        // number to increment to
+    const duration  = props.duration;   // duration of count in seconds
 
-    // number displayed by component
-    const [count, setCount] = useState("0")
-    
-    
+    const [count, setCount] = useState("0");    // number displayed by component
+
     useEffect(() => {
         let start = 0;
-        // first three numbers from props
-        const end = parseInt(number.substring(0, 3))
+        const end = parseInt(number.substring(0, 3));    // first three numbers from props
+        
         // if zero, return
         if (start === end) return;
 
         // find duration per increment
         let totalMilSecDur = parseInt(duration);
-        let incrementTime = (totalMilSecDur / end) * 1000;
+        let incrementTime  = (totalMilSecDur / end) * 1000;
 
         // timer increments start counter 
         // then updates count
         // ends if start reaches end
         let timer = setInterval(() => {
             start += 1;
-            setCount(String(start) + number.substring(3))
-            if (start === end) clearInterval(timer)
+            setCount(String(start) + number.substring(3));
+            if (start === end) clearInterval(timer);
         }, incrementTime);
 
         // dependency array
