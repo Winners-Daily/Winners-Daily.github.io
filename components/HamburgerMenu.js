@@ -5,11 +5,7 @@ import Hamburger from 'hamburger-react';
 
 const HamburgerMenu = () => {
     const [isOpen, setOpen] = useState(false);
-
-    function Open(){
-        console.log(isOpen);
-        setOpen(!isOpen);
-    }
+    const Open = () => setOpen(!isOpen);
     return (
         <>
             <div className={navStyles.MainDev}>
