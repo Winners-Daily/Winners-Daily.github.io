@@ -169,10 +169,7 @@ const HamburgerMenu = () => {
     1: setOpen
   } = (0,external_react_.useState)(false);
 
-  function Open() {
-    console.log(isOpen);
-    setOpen(!isOpen);
-  }
+  const Open = () => setOpen(!isOpen);
 
   return /*#__PURE__*/jsx_runtime_.jsx(jsx_runtime_.Fragment, {
     children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
