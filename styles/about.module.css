@@ -1,319 +1,304 @@
-.main{
-  box-sizing: border-box;
-  overflow-x: hidden;
-  width: 100%;
-
+.main {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
 }
-.content{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 @media (min-width: 801px) {
-  .topBoxes{
-  display: flex; 
-  flex-direction: row;
-  width: fit-content;
-  height: fit-content;
-  }
+    .topBoxes{
+        display: flex; 
+        flex-direction: row;
+        width: fit-content;
+        height: fit-content;
+    }
 }
 
 @media (max-width: 801px) {
-  .topBoxes{
-  display: flex; 
-  flex-direction: column;
-  width: fit-content;
-  height: fit-content;
-  }
+    .topBoxes{
+        display: flex; 
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+    }
 }
 
-
-.btn{
-  min-width: 200px;
-  min-height: 40px;
-  border-radius: 10px;
-  padding: 5px;
-  margin: 60px 0px;
-  font-size: small;
-  background-color:  #E8E8E8;
-  border: none;
-  cursor: pointer;
-  
+.btn {
+    min-width: 200px;
+    min-height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 60px 0px;
+    font-size: small;
+    background-color:  #E8E8E8;
+    border: none;
+    cursor: pointer;
 }
-
 
 .btn:hover { 
-  background-color:  #c5c3c3;
+    background-color:  #c5c3c3;
 }
 
-.box{
-  width:380px;
-  height: 600px;
-  border-radius: 25px;
-  margin: 10px;
-  display: flex;
-
-  align-items: center;
-  background-color: gainsboro;  
-  flex-direction: column;
+.box {
+    width:380px;
+    height: 600px;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;  
+    flex-direction: column;
 }
 
-.p2{
-  margin: 30px;
-  width: 50%;
-
-  text-align: left;
+.p2 {
+    margin: 30px;
+    width: 50%;
+    text-align: left;
 }
 
-.tableCol{
-  display: flex;
-  flex-direction: column;
-  margin: 0px 50px ;
-  align-items: center;
-  min-width: none;
-  width: 40%;
+.tableCol {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px ;
+    align-items: center;
+    min-width: none;
+    width: 40%;
 }
 
-.tableRow{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 30px;
+.tableRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.sec2{
-  width: 100%;
-  margin-left: 0;
-  left:0;
-
-  height: fit-content;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-
-  background-color: #EBEBED;
+.sec2 {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #EBEBED;
 }
 
-.p3{
-   font-size: medium;
-   width: 30%;
-
+.p3 {
+    font-size: medium;
+    width: 30%;
 }
 
-.p4{
-   font-size: medium;
-   width: 100%;
-
+.p4 {
+    font-size: medium;
+    width: 100%;
 }
 
-
-.sec3{
-  width: 100%;
-  margin-left: 0;
-  left:0;
-
-  height: fit-content;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-
+.sec3 {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-
-.imgKit{
-  max-width: 20%;
+.imgKit {
+    max-width: 20%;
 }
 
 @media (max-width: 801px) {
-  .line{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: fit-content;
-  }
-  .p3{
-    width: fit-content;
-    margin: 0 40px 20px 40px;
-  }
+    .line {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: fit-content;
+    }
 
-  
-  .p3S{
-    font-size: small;
-    text-align: center;
-    width: fit-content;
-    margin: 0 40px 20px 40px;
-  }
+    .p3 {
+        width: fit-content;
+        margin: 0 40px 20px 40px;
+    }
+    
+    .p3S {
+        font-size: small;
+        text-align: center;
+        width: fit-content;
+        margin: 0 40px 20px 40px;
+    }
 
-  .wrapper{
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .wrapper2{
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
-    flex-direction: column;
-    text-align: center;
-  }
-  .imgSmall{
-    width: 10%;
-    max-width: 50px;
-    height: auto;
-  }
+    .wrapper {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .wrapper2 {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imgSmall {
+        width: 10%;
+        max-width: 50px;
+        height: auto;
+    }
 }
 @media (min-width: 801px) {
-  .line{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
-  }
+    .line {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+    }
 
-  .wrapper{
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
-    margin-left: 75%;
-    flex-direction: column;
-    text-align: center;
-  }  
-  
-  .wrapper2{
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
-    margin-left: 60%;
-    flex-direction: column;
-    text-align: center;
-  }
+    .wrapper {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        margin-left: 75%;
+        flex-direction: column;
+        text-align: center;
+    }  
+    
+    .wrapper2 {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        margin-left: 60%;
+        flex-direction: column;
+        text-align: center;
+    }
 
-  .p3S{
-    font-size: medium;
-    text-align: left;
-    min-width: 307px;
-    width: 30%;
-    max-width: 30%;
-  }
+    .p3S {
+        font-size: medium;
+        text-align: left;
+        min-width: 307px;
+        width: 30%;
+        max-width: 30%;
+    }
 
-  .imgSmall{
-    width: 10%;
-    max-width: 50px;
-    height: auto;
-    margin-right: 30px;
-  }
+    .imgSmall {
+        width: 10%;
+        max-width: 50px;
+        height: auto;
+        margin-right: 30px;
+    }
 }
 
 
 @property --num {
-  syntax: "<integer>";
-  initial-value: 2020;
-  inherits: false;
+    syntax: "<integer>";
+    initial-value: 2020;
+    inherits: false;
 }
+
 .counter {
-  animation: counter 5s ease-in-out;
-  counter-reset: num var(--num);
-  font: 800 40px system-ui;
-  
+    animation: counter 5s ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
 }
+
 .counter::after {
-  content: counter(num);
+    content: counter(num);
 }
 
 @keyframes counter {
-  from {
-    --num: 0;
-  }
-  to {
-    --num: 2020;
-  }
+    from {
+        --num: 0;
+    }
+    to {
+        --num: 2020;
+    }
 }
 
 
 @property --num2 {
-  syntax: "<integer>";
-  initial-value: 342;
-  inherits: false;
+    syntax: "<integer>";
+    initial-value: 342;
+    inherits: false;
 }
 
-
 .counter2 {
-  animation: counter2 3s ease-in-out;
-  counter-reset: num2 var(--num2);
-  font: 800 40px system-ui;
+    animation: counter2 3s ease-in-out;
+    counter-reset: num2 var(--num2);
+    font: 800 40px system-ui;
 }
 
 .counter2::after {
-  content: counter(num2);
+    content: counter(num2);
 }
 
 @keyframes counter2 {
-  from {
-    --num2: 0;
-  }
-  to {
-    --num2: 342;
-  }
+    from {
+        --num2: 0;
+    }
+    to {
+        --num2: 342;
+    }
 }
 
 
 @property --num3 {
-  syntax: "<integer>";
-  initial-value: 439;
-  inherits: false;
+    syntax: "<integer>";
+    initial-value: 439;
+    inherits: false;
 }
+
 .counter3 {
-  animation: counter3 4s ease-in-out;
-  counter-reset: num3 var(--num3);
-  font: 800 40px system-ui;
-  
+    animation: counter3 4s ease-in-out;
+    counter-reset: num3 var(--num3);
+    font: 800 40px system-ui;
 }
+
 .counter3::after {
-  content: counter(num3);
+    content: counter(num3);
 }
 
 @keyframes counter3 {
-  from {
-    --num3: 0;
-  }
-  to {
-    --num3: 439;
-  }
+    from {
+        --num3: 0;
+    }
+    to {
+        --num3: 439;
+    }
 }
-
 
 @property --num4 {
-  syntax: "<integer>";
-  initial-value: 65;
-  inherits: false;
+    syntax: "<integer>";
+    initial-value: 65;
+    inherits: false;
 }
+
 .counter4 {
-  animation: counter4 1s ease-in-out;
-  counter-reset: num4 var(--num4);
-  font: 800 40px system-ui;
-  
+    animation: counter4 1s ease-in-out;
+    counter-reset: num4 var(--num4);
+    font: 800 40px system-ui;  
 }
+
 .counter4::after {
-  content: counter(num4);
+    content: counter(num4);
 }
 
 @keyframes counter4 {
-  from {
-    --num4: 0;
-  }
-  to {
-    --num4: 65;
-  }
+    from {
+        --num4: 0;
+    }
+    to {
+        --num4: 65;
+    }
 }
-
-
