@@ -59,7 +59,7 @@ Meta.defaultProps = {
 
 /***/ }),
 
-/***/ 8192:
+/***/ 5516:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -293,67 +293,69 @@ const Navbar = () => {
 // EXTERNAL MODULE: ./styles/footer.module.css
 var footer_module = __webpack_require__(4001);
 var footer_module_default = /*#__PURE__*/__webpack_require__.n(footer_module);
-;// CONCATENATED MODULE: external "react-hook-form"
-var external_react_hook_form_namespaceObject = require("react-hook-form");;
 ;// CONCATENATED MODULE: ./components/Footer.js
 
 
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-const Footer = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: {
-      errors
-    }
-  } = (0,external_react_hook_form_namespaceObject.useForm)();
+function Footer() {
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-    className: (footer_module_default()).footer,
-    children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
-      className: (footer_module_default()).form_container,
-      children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("form", {
-        action: "",
-        method: "post",
-        className: (footer_module_default()).form,
-        children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
-          className: (footer_module_default()).email_div,
-          children: /*#__PURE__*/jsx_runtime_.jsx("input", _objectSpread({
-            name: "email",
-            type: "email",
-            placeholder: "Enter yout email",
-            className: (footer_module_default()).email_input
-          }, register("email", {
-            required: {
-              value: true,
-              message: "Email required."
-            },
-            pattern: {
-              value: /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/,
-              message: "Invalid email format."
-            }
-          })))
-        }), /*#__PURE__*/jsx_runtime_.jsx("button", {
-          className: (footer_module_default()).email_button,
-          children: "Subscribe"
-        })]
-      })
+    className: (footer_module_default()).foot,
+    children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+      className: (footer_module_default()).email,
+      children: [/*#__PURE__*/jsx_runtime_.jsx("img", {
+        src: "/mail.png",
+        alt: "Vercel",
+        className: ((footer_module_default()).icon, (footer_module_default()).align)
+      }), /*#__PURE__*/jsx_runtime_.jsx("a", {
+        className: ((footer_module_default()).sub, (footer_module_default()).align),
+        href: "https://instagram.us17.list-manage.com/subscribe?u=db0809168e74731fc30782715&id=6b2cf448c5",
+        children: " Subscribe"
+      })]
     }), /*#__PURE__*/jsx_runtime_.jsx("p", {
-      className: (footer_module_default()).copy,
-      children: "\xA9 2020 - 2021 thewinnersdaily.com. All Rights Reserved."
+      className: (footer_module_default()).align,
+      children: "\xA9 2020 - 2021 thewinnersdaily.com. All Rights Reserved. "
     })]
   });
-};
-
-/* harmony default export */ var components_Footer = (Footer);
+} // import { useForm } from 'react-hook-form';
+// const Footer = () => {
+//     const {register, handleSubmit,formState: { errors }} = useForm();
+//     return (        
+//         <div className={footStyles.footer}>
+//             <div className={footStyles.form_container}>
+//                 <form 
+//                     action="" 
+//                     method="post"
+//                     className={footStyles.form}>
+//                     <div className={footStyles.email_div}>   
+//                         <input 
+//                             name="email" 
+//                             type="email" 
+//                             placeholder="Enter yout email" 
+//                             className={footStyles.email_input}
+//                             {...register("email", { 
+//                                 required:{
+//                                     value: true,
+//                                     message: "Email required."
+//                                 },
+//                                 pattern: {
+//                                     value: /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/,
+//                                     message: "Invalid email format."
+//                                 }
+//                             })}
+//                         />
+//                     </div>
+//                     <button
+//                         className={footStyles.email_button}
+//                     >
+//                         Subscribe
+//                     </button>
+//                 </form>
+//             </div>
+//             <p className={footStyles.copy}>© 2020 - 2021 thewinnersdaily.com. All Rights Reserved.</p>
+//         </div>
+//     )
+// }
+// export default Footer;
 // EXTERNAL MODULE: ./components/Meta.js + 1 modules
 var Meta = __webpack_require__(8876);
 // EXTERNAL MODULE: ./styles/Layout.module.css
@@ -406,7 +408,7 @@ const Layout = ({
         className: (Layout_module_default()).main,
         children: children
       })
-    }), /*#__PURE__*/jsx_runtime_.jsx(components_Footer, {})]
+    }), /*#__PURE__*/jsx_runtime_.jsx(Footer, {})]
   });
 };
 
@@ -414,11 +416,11 @@ const Layout = ({
 ;// CONCATENATED MODULE: ./pages/_app.js
 
 
-function _app_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _app_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { _app_ownKeys(Object(source), true).forEach(function (key) { _app_defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { _app_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
-function _app_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -428,7 +430,7 @@ function MyApp({
   pageProps
 }) {
   return /*#__PURE__*/jsx_runtime_.jsx(components_Layout, {
-    children: /*#__PURE__*/jsx_runtime_.jsx(Component, _app_objectSpread({}, pageProps))
+    children: /*#__PURE__*/jsx_runtime_.jsx(Component, _objectSpread({}, pageProps))
   });
 }
 
@@ -486,13 +488,11 @@ module.exports = {
 
 // Exports
 module.exports = {
-	"footer": "footer_footer__A2QDl",
-	"form_container": "footer_form_container__3KDFi",
-	"form": "footer_form__3hbcW",
-	"email_div": "footer_email_div__2MFST",
-	"email_input": "footer_email_input__1nZQV",
-	"email_button": "footer_email_button__2WfW-",
-	"copy": "footer_copy__1mn4t"
+	"foot": "footer_foot__36n03",
+	"icon": "footer_icon__1Y5vr",
+	"email": "footer_email__1hD80",
+	"align": "footer_align__UxgXV",
+	"sub": "footer_sub__3EKhQ"
 };
 
 
@@ -544,7 +544,7 @@ module.exports = require("react/jsx-runtime");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-var __webpack_exports__ = __webpack_require__.X(0, [664], function() { return __webpack_exec__(8192); });
+var __webpack_exports__ = __webpack_require__.X(0, [664], function() { return __webpack_exec__(5516); });
 module.exports = __webpack_exports__;
 
 })();
