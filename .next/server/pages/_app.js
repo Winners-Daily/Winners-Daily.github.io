@@ -59,7 +59,7 @@ Meta.defaultProps = {
 
 /***/ }),
 
-/***/ 5516:
+/***/ 8192:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -89,25 +89,30 @@ var router_namespaceObject = require("next/router");;
 
 
 
+
 const FullMenu = () => {
   const router = (0,router_namespaceObject.useRouter)();
-  return /*#__PURE__*/jsx_runtime_.jsx("nav", {
-    className: (Nav_module_default()).nav,
-    children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("ul", {
-      children: [/*#__PURE__*/jsx_runtime_.jsx("li", {
-        className: router.pathname == "/about" ? (Nav_module_default()).active : (Nav_module_default()).notActive,
-        children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
-          href: "/about",
-          children: "About"
-        })
-      }), /*#__PURE__*/jsx_runtime_.jsx("li", {
-        className: router.pathname == "/community" ? (Nav_module_default()).active : (Nav_module_default()).notActive,
-        children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
-          href: "/community",
-          children: "Community"
-        })
-      }), /*#__PURE__*/jsx_runtime_.jsx("li", {
-        className: router.pathname == "/" ? (Nav_module_default()).active : (Nav_module_default()).notActive,
+  return /*#__PURE__*/jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+    children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("nav", {
+      className: (Nav_module_default()).nav,
+      children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        className: (Nav_module_default()).nav_link_container,
+        children: [/*#__PURE__*/jsx_runtime_.jsx("span", {
+          className: (Nav_module_default()).nav_link,
+          children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+            href: "/about",
+            children: "About"
+          })
+        }), /*#__PURE__*/jsx_runtime_.jsx("span", {
+          className: (Nav_module_default()).nav_link,
+          children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+            href: "/community",
+            className: (Nav_module_default()).nav_link,
+            children: "Community"
+          })
+        })]
+      }), /*#__PURE__*/jsx_runtime_.jsx("div", {
+        className: (Nav_module_default()).nav_main,
         children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
           href: "/",
           children: /*#__PURE__*/jsx_runtime_.jsx("img", {
@@ -116,30 +121,33 @@ const FullMenu = () => {
             className: (Nav_module_default()).logoCenter
           })
         })
-      }), /*#__PURE__*/jsx_runtime_.jsx("li", {
-        className: router.pathname == "/mediaKit" ? (Nav_module_default()).active : (Nav_module_default()).notActive,
-        children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
-          href: "/mediaKit",
-          children: "Media Kit"
-        })
-      }), /*#__PURE__*/jsx_runtime_.jsx("li", {
-        className: router.pathname == "/services" ? (Nav_module_default()).active : (Nav_module_default()).notActive,
-        children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
-          href: "/services",
-          children: "Services"
-        })
-      }), /*#__PURE__*/jsx_runtime_.jsx("li", {
-        children: /*#__PURE__*/jsx_runtime_.jsx("div", {
-          className: (Nav_module_default()).insta,
-          children: /*#__PURE__*/jsx_runtime_.jsx("a", {
-            href: "https://www.instagram.com/winnersdaily/",
-            target: "_blank",
-            rel: "noopener noreferrer",
-            children: /*#__PURE__*/jsx_runtime_.jsx("img", {
-              src: "/instagram.png",
-              alt: "Vercel",
-              className: (Nav_module_default()).logo
-            })
+      }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        className: (Nav_module_default()).nav_link_container,
+        children: [/*#__PURE__*/jsx_runtime_.jsx("span", {
+          className: (Nav_module_default()).nav_link,
+          children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+            href: "/mediaKit",
+            className: (Nav_module_default()).nav_link,
+            children: "Media Kit"
+          })
+        }), /*#__PURE__*/jsx_runtime_.jsx("span", {
+          className: (Nav_module_default()).nav_link,
+          children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+            href: "/services",
+            className: (Nav_module_default()).nav_link,
+            children: "Services"
+          })
+        })]
+      }), /*#__PURE__*/jsx_runtime_.jsx("div", {
+        className: (Nav_module_default()).insta,
+        children: /*#__PURE__*/jsx_runtime_.jsx("a", {
+          href: "https:www.instagram.com/winnersdaily/",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          children: /*#__PURE__*/jsx_runtime_.jsx("img", {
+            src: "/instagram.png",
+            alt: "Vercel",
+            className: (Nav_module_default()).logo
           })
         })
       })]
@@ -147,7 +155,32 @@ const FullMenu = () => {
   });
 };
 
-/* harmony default export */ var components_FullMenu = (FullMenu);
+/* harmony default export */ var components_FullMenu = (FullMenu); //         <nav className={navStyles.nav}>
+//             <ul>
+//                 <li className={router.pathname == "/about" ? navStyles.active : navStyles.notActive}>
+//                     <Link href='/about' >About</Link>
+//                 </li>
+//                 <li className={router.pathname == "/community" ? navStyles.active : navStyles.notActive}>
+//                     <Link href='/community'>Community</Link>
+//                 </li>
+//                 <li className={router.pathname == "/" ? navStyles.active : navStyles.notActive}>
+//                     <Link href='/'><img src="/WD.png" alt="Vercel" className={navStyles.logoCenter} /></Link>
+//                 </li>
+//                 <li className={router.pathname == "/mediaKit" ? navStyles.active : navStyles.notActive}>
+//                     <Link href='/mediaKit'>Media Kit</Link>
+//                 </li>
+//                 <li className={router.pathname == "/services" ? navStyles.active : navStyles.notActive}>
+//                     <Link href='/services'>Services</Link>
+//                 </li>
+//                 <li>
+//                     <div className={navStyles.insta}>
+//                         <a href='https://www.instagram.com/winnersdaily/' target="_blank" rel="noopener noreferrer">
+//                             <img src="/instagram.png" alt="Vercel" className={navStyles.logo} />
+//                         </a>
+//                     </div>
+//                 </li>
+//             </ul>
+//         </nav>
 // EXTERNAL MODULE: ./styles/NavHam.module.css
 var NavHam_module = __webpack_require__(5606);
 var NavHam_module_default = /*#__PURE__*/__webpack_require__.n(NavHam_module);
@@ -263,32 +296,73 @@ const Navbar = () => {
 // EXTERNAL MODULE: ./styles/footer.module.css
 var footer_module = __webpack_require__(4001);
 var footer_module_default = /*#__PURE__*/__webpack_require__.n(footer_module);
+;// CONCATENATED MODULE: external "react-hook-form"
+var external_react_hook_form_namespaceObject = require("react-hook-form");;
 ;// CONCATENATED MODULE: ./components/Footer.js
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
 
 const Footer = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: {
+      errors
+    }
+  } = (0,external_react_hook_form_namespaceObject.useForm)();
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-    className: (footer_module_default()).foot,
-    children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-      className: (footer_module_default()).email,
-      children: [/*#__PURE__*/jsx_runtime_.jsx("img", {
-        src: "/mail.png",
-        alt: "Vercel",
-        className: (footer_module_default()).icon
-      }), /*#__PURE__*/jsx_runtime_.jsx("a", {
-        className: (footer_module_default()).sub,
-        href: "https://instagram.us17.list-manage.com/subscribe?u=db0809168e74731fc30782715&id=6b2cf448c5",
-        children: " Subscribe"
-      })]
+    className: (footer_module_default()).footer,
+    children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
+      className: (footer_module_default()).form_container,
+      children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("form", {
+        action: "",
+        method: "post",
+        className: (footer_module_default()).form,
+        children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
+          className: (footer_module_default()).email_div,
+          children: /*#__PURE__*/jsx_runtime_.jsx("input", _objectSpread({
+            name: "email",
+            type: "email",
+            placeholder: "Enter yout email",
+            className: (footer_module_default()).email_input
+          }, register("email", {
+            required: {
+              value: true,
+              message: "Email required."
+            },
+            pattern: {
+              value: /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/,
+              message: "Invalid email format."
+            }
+          })))
+        }), /*#__PURE__*/jsx_runtime_.jsx("button", {
+          className: (footer_module_default()).email_button,
+          children: "Subscribe"
+        })]
+      })
     }), /*#__PURE__*/jsx_runtime_.jsx("p", {
-      children: "\xA9 2020 - 2021 thewinnersdaily.com. All Rights Reserved. "
+      className: (footer_module_default()).copy,
+      children: "\xA9 2020 - 2021 thewinnersdaily.com. All Rights Reserved."
     })]
   });
 };
 
 /* harmony default export */ var components_Footer = (Footer);
+{
+  /* <div className={footStyles.email}>
+     <img src="/mail.png" alt="Vercel" className={footStyles.icon} /> 
+     <a className={footStyles.sub} href="https://instagram.us17.list-manage.com/subscribe?u=db0809168e74731fc30782715&id=6b2cf448c5"> Subscribe</a>
+  </div> */
+}
 // EXTERNAL MODULE: ./components/Meta.js + 1 modules
 var Meta = __webpack_require__(8876);
 // EXTERNAL MODULE: ./styles/Layout.module.css
@@ -349,11 +423,11 @@ const Layout = ({
 ;// CONCATENATED MODULE: ./pages/_app.js
 
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function _app_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _app_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { _app_ownKeys(Object(source), true).forEach(function (key) { _app_defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { _app_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _app_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -363,7 +437,7 @@ function MyApp({
   pageProps
 }) {
   return /*#__PURE__*/jsx_runtime_.jsx(components_Layout, {
-    children: /*#__PURE__*/jsx_runtime_.jsx(Component, _objectSpread({}, pageProps))
+    children: /*#__PURE__*/jsx_runtime_.jsx(Component, _app_objectSpread({}, pageProps))
   });
 }
 
@@ -389,9 +463,12 @@ module.exports = {
 // Exports
 module.exports = {
 	"nav": "Nav_nav__3Zjf-",
+	"nav_main": "Nav_nav_main__2YSuu",
+	"nav_link_container": "Nav_nav_link_container__2q3Eg",
+	"nav_link": "Nav_nav_link__2qeZn",
+	"insta": "Nav_insta__2gDi_",
 	"logo": "Nav_logo__11byI",
 	"logoCenter": "Nav_logoCenter__2IwcZ",
-	"insta": "Nav_insta__2gDi_",
 	"active": "Nav_active__23I2d",
 	"notActive": "Nav_notActive__1BQBc"
 };
@@ -419,10 +496,13 @@ module.exports = {
 
 // Exports
 module.exports = {
-	"foot": "footer_foot__36n03",
-	"icon": "footer_icon__1Y5vr",
-	"email": "footer_email__1hD80",
-	"sub": "footer_sub__3EKhQ"
+	"footer": "footer_footer__A2QDl",
+	"form_container": "footer_form_container__3KDFi",
+	"form": "footer_form__3hbcW",
+	"email_div": "footer_email_div__2MFST",
+	"email_input": "footer_email_input__1nZQV",
+	"email_button": "footer_email_button__2WfW-",
+	"copy": "footer_copy__1mn4t"
 };
 
 
@@ -474,7 +554,7 @@ module.exports = require("react/jsx-runtime");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-var __webpack_exports__ = __webpack_require__.X(0, [664], function() { return __webpack_exec__(5516); });
+var __webpack_exports__ = __webpack_require__.X(0, [374,664], function() { return __webpack_exec__(8192); });
 module.exports = __webpack_exports__;
 
 })();

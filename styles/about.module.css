@@ -11,6 +11,22 @@
     text-align: center;
 }
 
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+}
+.wrapper3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imgKit {
+    max-width:50%;
+}
+
 @media (min-width: 801px) {
     .topBoxes{
         display: flex; 
@@ -26,6 +42,9 @@
         flex-direction: column;
         width: fit-content;
         height: fit-content;
+    }
+    .imgKit {
+        max-width: 70%;
     }
 }
 
@@ -111,9 +130,6 @@
     text-align: center;
 }
 
-.imgKit {
-    max-width: 20%;
-}
 
 @media (max-width: 801px) {
     .line {

@@ -91,20 +91,15 @@ const about = () => {
             <div className={aboutStyles.sec2}>
                 <h2>Media Press Kit</h2>
                 <p className={aboutStyles.p3} >
-                Download our logo or icon and use it on your website or advertising.
-
+                    Download our logo or icon and use it on your website or advertising.
                 </p>
-                <div className={aboutStyles.wrapper2} >
-                    <div className={aboutStyles.line}>
-                    <img src="/about/mediaKit1.png" className={aboutStyles.imgKit} />
-                    <img src="/about/mediaKit2.png" className={aboutStyles.imgKit} />
-                    </div>
-
-                    <div className={aboutStyles.line}>
-                    <img src="/about/mediaKit3.png" className={aboutStyles.imgKit}/>
-                    <img src="/about/mediaKit4.png" className={aboutStyles.imgKit}/>
-                    
-                    </div>
+                <div className={aboutStyles.container3} >
+                    <div className={aboutStyles.wrapper3}>
+                        <img src="/about/mediaKit1.png" className={aboutStyles.imgKit} />
+                        <img src="/about/mediaKit2.png" className={aboutStyles.imgKit} />
+                        <img src="/about/mediaKit3.png" className={aboutStyles.imgKit}/>
+                        <img src="/about/mediaKit4.png" className={aboutStyles.imgKit}/>
+                    </div>    
                 </div>
                 <button className={aboutStyles.btn}>
                     <a href="/WinnersDaily_Press_Kit_All.zip" download="winnersdaily_media_kit" className={aboutStyles.p3} style={{margin: 20}}>

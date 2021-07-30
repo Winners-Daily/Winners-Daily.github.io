@@ -59,7 +59,6 @@
         width: inherit;
         height: inherit;
         border-radius: 25px;
-        
     }
 
     .p2 {
@@ -71,6 +70,7 @@
     }
         
     .inputBox {
+        padding-left: 10px;
         min-width: 200px;
         min-height: 40px;
         border-radius: 10px;

@@ -1,26 +1,38 @@
 .nav {
     height: 50px;
-    padding: 10px;
-    background: #000;
+    width: 100%;
+    background: #000000;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    top: 0px;
 }
 
-.nav ul {
+.nav_main {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.nav_link_container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -60px;
-    list-style: none;
 }
 
-.nav ul li a {
-    margin: 5px 15px;
+.nav_link {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-bottom: 3px;
 }
+
+.insta {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    color: #fff;
+} 
 
 .logo {
     height: 1.4em;
@@ -34,15 +46,6 @@
     height: 6em;
     padding-top: 3px;
     cursor: pointer; 
-}
-
-.insta {
-    position: absolute;
-    top: 0;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    right: 0;
 }
 
 .active {

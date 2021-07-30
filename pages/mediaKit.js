@@ -1,11 +1,16 @@
 import Meta from '../components/Meta';
+import Image from 'next/image';
+import mediaKitImg from '../public/mediaKit/mediaKit.png';
+import mediaKitStyles from '../styles/mediaKit.module.css';
 
 const mediaKit = () => {
     return(
-        <div>
+        <>
             <Meta title='MediaKit' />
-            <img src="/mediaKit/mediaKit.png" style={{width : '100%'}}/>
-        </div>
+            <div className={mediaKitStyles.container}>
+                <Image src={mediaKitImg} alt="Media Kit" />
+            </div>
+        </>
     );
 }
 

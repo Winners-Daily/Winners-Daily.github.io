@@ -1,20 +1,17 @@
 import homeStyles from '../styles/home.module.css';
-import ImageFadeIn from "react-image-fade-in";
-import { Center } from '@chakra-ui/react';
 import Link from 'next/link';
-import Image from 'next';
 
 const Home = () => {
     const arr = [...Array(25)];
-    var i = 2;
-    var j = 1;
-    var i_offset = 2;
-    var odd = false;
-    var id = 0;
-    var first = 25;
-    var width = 14;
-    var name = "";
-    var imgs = [];
+    let i = 2;
+    let j = 1;
+    let i_offset = 2;
+    let odd = false;
+    let id = 0;
+    let first = 25;
+    let width = 14;
+    let name = "";
+    let imgs = [];
     arr.map(_ => {
         if (i > width) {
             first -= 63;
