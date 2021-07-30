@@ -43,7 +43,7 @@ const Meta = ({
       charSet: "utf-8"
     }), /*#__PURE__*/jsx_runtime_.jsx("link", {
       rel: "icon",
-      href: "/WD.png"
+      href: "/favicon.ico"
     }), /*#__PURE__*/jsx_runtime_.jsx("title", {
       children: title
     })]
