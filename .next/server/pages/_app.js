@@ -98,16 +98,15 @@ const FullMenu = () => {
       children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
         className: (Nav_module_default()).nav_link_container,
         children: [/*#__PURE__*/jsx_runtime_.jsx("span", {
-          className: (Nav_module_default()).nav_link,
+          className: router.pathname == "/about" ? (Nav_module_default()).active : (Nav_module_default()).notActive,
           children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
             href: "/about",
             children: "About"
           })
         }), /*#__PURE__*/jsx_runtime_.jsx("span", {
-          className: (Nav_module_default()).nav_link,
+          className: router.pathname == "/community" ? (Nav_module_default()).active : (Nav_module_default()).notActive,
           children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
             href: "/community",
-            className: (Nav_module_default()).nav_link,
             children: "Community"
           })
         })]
@@ -124,17 +123,15 @@ const FullMenu = () => {
       }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
         className: (Nav_module_default()).nav_link_container,
         children: [/*#__PURE__*/jsx_runtime_.jsx("span", {
-          className: (Nav_module_default()).nav_link,
+          className: router.pathname == "/mediaKit" ? (Nav_module_default()).active : (Nav_module_default()).notActive,
           children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
             href: "/mediaKit",
-            className: (Nav_module_default()).nav_link,
             children: "Media Kit"
           })
         }), /*#__PURE__*/jsx_runtime_.jsx("span", {
-          className: (Nav_module_default()).nav_link,
+          className: router.pathname == "/services" ? (Nav_module_default()).active : (Nav_module_default()).notActive,
           children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
             href: "/services",
-            className: (Nav_module_default()).nav_link,
             children: "Services"
           })
         })]
@@ -357,12 +354,6 @@ const Footer = () => {
 };
 
 /* harmony default export */ var components_Footer = (Footer);
-{
-  /* <div className={footStyles.email}>
-     <img src="/mail.png" alt="Vercel" className={footStyles.icon} /> 
-     <a className={footStyles.sub} href="https://instagram.us17.list-manage.com/subscribe?u=db0809168e74731fc30782715&id=6b2cf448c5"> Subscribe</a>
-  </div> */
-}
 // EXTERNAL MODULE: ./components/Meta.js + 1 modules
 var Meta = __webpack_require__(8876);
 // EXTERNAL MODULE: ./styles/Layout.module.css
@@ -465,7 +456,6 @@ module.exports = {
 	"nav": "Nav_nav__3Zjf-",
 	"nav_main": "Nav_nav_main__2YSuu",
 	"nav_link_container": "Nav_nav_link_container__2q3Eg",
-	"nav_link": "Nav_nav_link__2qeZn",
 	"insta": "Nav_insta__2gDi_",
 	"logo": "Nav_logo__11byI",
 	"logoCenter": "Nav_logoCenter__2IwcZ",
@@ -554,7 +544,7 @@ module.exports = require("react/jsx-runtime");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-var __webpack_exports__ = __webpack_require__.X(0, [374,664], function() { return __webpack_exec__(8192); });
+var __webpack_exports__ = __webpack_require__.X(0, [664], function() { return __webpack_exec__(8192); });
 module.exports = __webpack_exports__;
 
 })();

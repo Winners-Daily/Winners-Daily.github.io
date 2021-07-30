@@ -8,11 +8,11 @@ const FullMenu = () => {
         <>
             <nav className={navStyles.nav}>
                 <div className={navStyles.nav_link_container}>
-                    <span className={navStyles.nav_link}>
+                    <span className={router.pathname == "/about" ? navStyles.active : navStyles.notActive}>
                         <Link href='/about'>About</Link>
                     </span>
-                    <span className={navStyles.nav_link}>
-                        <Link href='/community' className={navStyles.nav_link}>Community</Link>
+                    <span className={router.pathname == "/community" ? navStyles.active : navStyles.notActive}>
+                        <Link href='/community'>Community</Link>
                     </span>
                 </div>
                 <div className={navStyles.nav_main}>
@@ -21,11 +21,11 @@ const FullMenu = () => {
                     </Link>
                 </div>
                 <div className={navStyles.nav_link_container}>
-                    <span className={navStyles.nav_link}>
-                        <Link href='/mediaKit' className={navStyles.nav_link}>Media Kit</Link>
+                    <span className={router.pathname == "/mediaKit" ? navStyles.active : navStyles.notActive}>
+                        <Link href='/mediaKit'>Media Kit</Link>
                     </span>
-                    <span className={navStyles.nav_link}>
-                        <Link href='/services' className={navStyles.nav_link}>Services</Link>
+                    <span className={router.pathname == "/services" ? navStyles.active : navStyles.notActive}>
+                        <Link href='/services'>Services</Link>
                     </span>
                 </div>
                 <div className={navStyles.insta}>

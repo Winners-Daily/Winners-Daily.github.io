@@ -17,12 +17,6 @@
     display: flex;
 }
 
-.nav_link {
-    margin-left: 1.2rem;
-    margin-right: 1.2rem;
-    margin-bottom: 3px;
-}
-
 .insta {
     position: absolute;
     top: 0;
@@ -50,8 +44,14 @@
 
 .active {
     color: #fff;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-bottom: 3px;
 }
 
 .notActive {
     color: rgb(160, 160, 160);
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-bottom: 3px;
 }

@@ -1,5 +1,8 @@
 import homeStyles from '../styles/home.module.css';
 import Link from 'next/link';
+import ImageFadeIn from "react-image-fade-in";
+import { Center } from '@chakra-ui/react';
+import Image from 'next';
 
 const Home = () => {
     const arr = [...Array(25)];

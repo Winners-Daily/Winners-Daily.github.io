@@ -1,17 +1,13 @@
-import Meta from '../components/Meta';
-import Image from 'next/image';
-import mediaKitImg from '../public/mediaKit/mediaKit.png';
-import mediaKitStyles from '../styles/mediaKit.module.css';
+import Meta from '../components/Meta'
 
 const mediaKit = () => {
     return(
-        <>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
             <Meta title='MediaKit' />
-            <div className={mediaKitStyles.container}>
-                <Image src={mediaKitImg} alt="Media Kit" />
-            </div>
-        </>
+            <img src="/mediaKit/mediaKit.png" style={{width: '45%'}}/>
+        </div>
     );
+
 }
 
 export default mediaKit;
