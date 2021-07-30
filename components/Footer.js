@@ -42,9 +42,3 @@ const Footer = () => {
 }
 
 export default Footer;
-
-
-{/* <div className={footStyles.email}>
-    <img src="/mail.png" alt="Vercel" className={footStyles.icon} /> 
-    <a className={footStyles.sub} href="https://instagram.us17.list-manage.com/subscribe?u=db0809168e74731fc30782715&id=6b2cf448c5"> Subscribe</a>
-</div> */}
