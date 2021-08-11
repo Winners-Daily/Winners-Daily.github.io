@@ -1,11 +1,7 @@
 {
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/about": "pages/about.html",
-  "/community": "pages/community.html",
-  "/": "pages/index.html",
-  "/mediaKit": "pages/mediaKit.html",
-  "/services": "pages/services.html",
   "/_error": "pages/_error.js",
-  "/404": "pages/404.html"
+  "/": "pages/index.js",
+  "/community": "pages/community.js"
 }
