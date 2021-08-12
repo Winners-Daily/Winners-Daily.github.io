@@ -42,8 +42,13 @@ const Layout = ({ children }) => {
                     router.reload(window.location.pathname)
                     
                 }
-            }}>
-                this website uses google analytics to understand users behaviour. You can decline and choose to stay anonymous
+            }}
+                buttonStyle={{ background: "white"}}
+                declineButtonStyle={{ background: "gray"}}
+
+            >
+                this website uses cookies to try and improve the user's experience. 
+                <br/> you can read our <a style={{textDecoration: "underline"}} href="/terms">terms and conditions</a> to earn more about our cookies polices.
             </CookieConsent>
             <div className={styles.container}>
                 <main className={styles.main}>
